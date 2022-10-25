@@ -1,22 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
+import 'package:sample/secondPage.dart';
+
+import 'firstPage.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget{
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
-  Widget build(BuildContext context){
-    final wordPair = WordPair.random();
+  Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to Flutter',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Welcome to Flutter'),
-        ),
-        body: Center(
-          child: Text(wordPair.asPascalCase),
-        ),
-      ),
+      title: "FlutterDemo",
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: SecondPage(),
     );
   }
 }
+
