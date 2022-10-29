@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sample/secondPage.dart';
 
-import 'firstPage.dart';
+import 'widget_management/firstPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "FlutterDemo",
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: SecondPage(),
+      home: const SecondPage(),
     );
   }
 }
