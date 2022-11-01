@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:sample/widget_management/bottomNavigation.dart';
-import 'package:sample/widget_management/crossValued.dart';
-import 'package:sample/widget_management/photoDisplay.dart';
-import 'package:sample/widget_management/sliverAppBar.dart';
+import 'package:sample/management/widget_management/photoDisplay.dart';
+import 'package:sample/management/widget_management/sliverAppBar.dart';
+import 'package:sample/management/widget_management/youtubePage.dart';
+import 'management/widget_management/bottomNavigation.dart';
+import 'management/widget_management/crossValued.dart';
+import 'management/widget_management/drawer.dart';
+import 'management/widget_management/list.dart';
 
-import 'drawer.dart';
-import 'list.dart';
-
-class SecondPage extends StatelessWidget{
-  const SecondPage({super.key});
+class FirstPage extends StatelessWidget{
+  const FirstPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +37,7 @@ class SecondPage extends StatelessWidget{
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              _nextPageButton(context, "Bottom", const MyStatefulWidget()),
+              _nextPageButton(context, "YoutubePage", YoutubePage()),
               _nextPageButton(context, "list", const ListPage()),
               _nextPageButton(context, "Drawer", const DrawerPage()),
             ],

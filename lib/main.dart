@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'firstPage.dart';
 
-import 'widget_management/firstPage.dart';
-
-void main() => runApp(MyApp());
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -12,8 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "FlutterDemo",
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const SecondPage(),
+      home: const FirstPage(),
     );
   }
 }
-
