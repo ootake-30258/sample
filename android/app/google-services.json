@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "539741594088",
+    "firebase_url": "https://booklist-d4ece-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "booklist-d4ece",
+    "storage_bucket": "booklist-d4ece.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539741594088:android:b7d493238d6ab1d6fe445d",
+        "android_client_info": {
+          "package_name": "com.example.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539741594088-2inp9i7snlhvu9614nujaff8758rmer6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuB1VjxlJd05_F4V2OEH42nx8SUujpHRo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539741594088-2inp9i7snlhvu9614nujaff8758rmer6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "539741594088-i50pami1apikadm0vpmehoa6rbhtr86m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.sample"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
