@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:sample/management/dart_management/finalAndConst.dart';
 import 'package:sample/management/widget_management/photoDisplay.dart';
 import 'package:sample/management/widget_management/sliverAppBar.dart';
 import 'package:sample/management/widget_management/youtubePage.dart';
-import 'management/widget_management/bottomNavigation.dart';
-import 'management/widget_management/crossValued.dart';
-import 'management/widget_management/drawer.dart';
-import 'management/widget_management/list.dart';
+import 'package:sample/management/widget_management/bottomNavigation.dart';
+import 'package:sample/management/widget_management/crossValued.dart';
+import 'package:sample/management/widget_management/drawer.dart';
+import 'package:sample/management/widget_management/list.dart';
 
 class FirstPage extends StatelessWidget{
   const FirstPage({super.key});
@@ -38,7 +39,7 @@ class FirstPage extends StatelessWidget{
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               _nextPageButton(context, "YoutubePage", YoutubePage()),
-              _nextPageButton(context, "list", const ListPage()),
+              _nextPageButton(context, "ListPage", ListPage()),
               _nextPageButton(context, "Drawer", const DrawerPage()),
             ],
           ),
